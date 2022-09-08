@@ -1,0 +1,171 @@
+.header .header-top {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ded6d6;
+  position: relative;
+}
+.header .header-top .search {
+  width: 20%;
+  margin-left: 30px;
+}
+.header .header-top .search #search-addon {
+  margin: 5px 0;
+}
+.header .header-top .search__result {
+  position: absolute;
+  z-index: 100;
+  top: 55px;
+  left: 30px;
+  border-radius: 5px;
+}
+.header .header-top .search__result ul {
+  height: 285px;
+  overflow: auto;
+}
+.header .header-top .search__result ul::-webkit-scrollbar {
+  width: 0;
+}
+.header .header-top .logo-header {
+  margin: 5px 0;
+}
+.header .header-top .right {
+  width: 30%;
+}
+.header .header-top .right .header-top-right {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-top .right .header-top-right .shopping__card {
+  position: relative;
+  color: #363636;
+  padding-left: 5px;
+  transition: all 0.5s;
+}
+.header .header-top .right .header-top-right .shopping__card .badge {
+  position: absolute;
+  top: 2px;
+  right: -15px;
+}
+.header .header-top .right .header-top-right .shopping__card:hover {
+  color: red;
+}
+.header .header-top .right .header-top-right a:last-child i {
+  font-size: 22px;
+  color: #363636;
+  transition: all 0.5s;
+}
+.header .header-top .right .header-top-right a:last-child i:hover {
+  color: red;
+  transform: scale(1.2);
+}
+.header .header-top .right .header-top-right a:first-child {
+  padding-right: 5px;
+}
+.header .header-top .right .header-top-right i {
+  position: relative;
+}
+.header .header-top .right .header-top-right i .quantity {
+  position: absolute;
+  font-size: 0.5rem;
+  bottom: 10%;
+  right: 0;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40%;
+}
+.header .header-bot {
+  width: 100vw;
+  text-align: center;
+}
+.header .header-bot .header-bot-item {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-bot .header-bot-item ul li {
+  position: relative;
+  display: inline-block;
+}
+.header .header-bot .header-bot-item ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+.header .header-bot .header-bot-item ul li .dropdown-menu a {
+  color: black;
+  position: relative;
+  width: 195px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header .header-bot .header-bot-item ul li .dropdown-menu a a {
+  color: black;
+}
+.header .header-bot .header-bot-item ul li .dropdown-menu a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.header .header-bot .header-bot-item ul li .dropdown-menu a:hover a {
+  color: white;
+  cursor: pointer;
+}
+.header .header-bot .header-bot-item ul li .nav-link {
+  display: flex;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+  position: relative;
+  padding: 8px 0;
+  margin: 0 15px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.header .header-bot .header-bot-item ul li .nav-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 50%;
+  height: 2px;
+  background: #2b2b79;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header .header-bot .header-bot-item ul li .nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 50%;
+  height: 2px;
+  background: #f300ff;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header .header-bot .header-bot-item ul li .nav-link:hover {
+  color: #ff0000;
+}
+.header .header-bot .header-bot-item ul li .nav-link:hover:before {
+  right: 0;
+}
+.header .header-bot .header-bot-item ul li a:hover:after {
+  left: 0;
+}
+.header .header-bot .header-bot-item ul .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header .header-bot .header-bot-item ul .dropdown:hover .dropdown-link {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=header.component.css.map */
